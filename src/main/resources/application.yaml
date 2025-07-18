@@ -1,1 +1,13 @@
-spring.application.name=SpringRestCommitIntoTwoSchema
+server:
+  port: 8081
+spring:
+  application:
+    name: SpringRestCommitIntoTwoSchema
+  datasource:
+    url: jdbc:mysql://localhost:3306/coreschema
+    username: root
+    password: root1root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
