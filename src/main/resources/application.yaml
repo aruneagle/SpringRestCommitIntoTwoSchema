@@ -11,3 +11,15 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+
+springdoc:
+  swagger-ui:
+    api:
+      group-name: CMA
+      controller-package: com.arun.springrestcommitintotwoschema.controller
+    info:
+      title: Customer Management API
+      description: The CMA maintains the Customer management services
+      license: arun license
+      version: "@project.version@"
+    operations-sorter: alpha
